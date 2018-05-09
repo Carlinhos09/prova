@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ProdutosPage } from '../produtos/produtos';
+import { InstitucionalPage } from '../institucional/institucional';
+import { ContatoPage } from '../contato/contato';
 
 @Component({
   selector: 'page-home',
@@ -10,5 +13,13 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+ openProdutos(){
+   this.navCtrl.push(ProdutosPage);
+ }
+ openinstitucional(){
+   this.navCtrl.push(InstitucionalPage);
+ }
+ openContato(){
+   this.navCtrl.push(ContatoPage);
+ } 
 }
